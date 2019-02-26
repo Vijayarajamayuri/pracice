@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<h1>
+   
+</h1>
+
+
+</head>
+<body>
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a><br>
+    <br>
+    <br>
+
+    <a href="https://www.youtube.com/">youtube</a>
+    <br>
+    <br>
+
+
+    <abbr title="World Health Organization">WHO</abbr>
+<article>
+  <h1>Google Chrome</h1>
+  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article>
+<button type="button"onclick= "alert('hello world')"> click me </button>
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+    oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+  </p>
+  <p>Celsius: <span id="outputCelsius"></span></p>
+  <script>
+
+      function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+      }
+    </script>
+
+
+</body>
